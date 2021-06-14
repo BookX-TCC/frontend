@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <meta name="generator" />
+      <title>Cadastro</title>
+
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link href="bootstrap.min.css" rel="stylesheet" />
+      <link href="css.css" rel="stylesheet" />
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="card cadastro text-center">
+            <p class="titulo_cadastro">Cadastro</p>
+            <form method="GET" class="form_cadastro" action="#">
+               <div>
+                  <input
+                     class="input_cadastro"
+                     id="nome"
+                     placeholder="nome completo"
+                  />
+               </div>
+
+               <div class="row">
+                  <div class="col-10">
+                     <input
+                        class="input_cadastro"
+                        id="cep"
+                        autocomplete="off"
+                        placeholder="cep"
+                     />
+                  </div>
+                  <div class="col-2">
+                     <button class="icone" id="procura-cep">
+                        <i class="fa fa-search" style="font-size: 30px"></i>
+                     </button>
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="col-9">
+                     <input
+                        type="text"
+                        class="input_cadastro"
+                        id="endereco"
+                        placeholder="endereço"
+                     />
+                  </div>
+                  <div class="col-3">
+                     <input
+                        class="input_cadastro"
+                        id="numero"
+                        placeholder="nº"
+                     />
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="col">
+                     <input
+                        type="text"
+                        class="input_cadastro"
+                        id="comp"
+                        placeholder="complemento"
+                     />
+                  </div>
+                  <div class="col">
+                     <input
+                        type="text"
+                        class="input_cadastro"
+                        id="bairro"
+                        placeholder="bairro"
+                     />
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="col">
+                     <input
+                        type="text"
+                        id="cidade"
+                        class="input_cadastro"
+                        placeholder="cidade"
+                     />
+                  </div>
+                  <div class="col">
+                     <input
+                        type="text"
+                        id="estado"
+                        class="input_cadastro"
+                        placeholder="estado"
+                     />
+                  </div>
+               </div>
+
+               <div>
+                  <input
+                     class="input_cadastro"
+                     id="email"
+                     placeholder="email"
+                  />
+               </div>
+
+               <div class="row">
+                  <div class="col">
+                     <input
+                        type="text"
+                        id="senha"
+                        class="input_cadastro"
+                        placeholder="senha"
+                     />
+                  </div>
+                  <div class="col">
+                     <input
+                        type="text"
+                        id="confirmar"
+                        class="input_cadastro"
+                        placeholder="confirmar senha"
+                     />
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="col-10">
+                     <input class="input_cadastro" placeholder="imagem" />
+                  </div>
+                  <div class="col-2">
+                     <button class="icone">
+                        <i
+                           class="fa fa-cloud-upload"
+                           style="font-size: 30px"
+                        ></i>
+                     </button>
+                  </div>
+               </div>
+
+               <div>
+                  <button class="botao_cadastro" type="criarconta">
+                     Criar
+                  </button>
+               </div>
+            </form>
+         </div>
+      </div>
+      <script src="./js/cadastro.js"></script>
+   </body>
+</html>

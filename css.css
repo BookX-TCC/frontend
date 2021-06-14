@@ -1,0 +1,482 @@
+@font-face {
+   font-family: IBMPlexSans-Regular;
+   src: url(IBMPlexSans/IBMPlexSans-Regular.ttf);
+}
+
+@font-face {
+   font-family: IBMPlexSans-Medium;
+   src: url(IBMPlexSans/IBMPlexSans-Medium.ttf);
+}
+
+@font-face {
+   font-family: IBMPlexSans-SemiBold;
+   src: url(IBMPlexSans/IBMPlexSans-SemiBold.ttf);
+}
+
+html,
+body {
+   border-radius: 0px;
+   background-color: #fafafa;
+   align-items: center;
+}
+
+p {
+   font-family: IBMPlexSans-Regular;
+}
+
+::placeholder {
+   color: #6f6f6f;
+   font-style: italic;
+   font-size: 0.95rem;
+   text-transform: capitalize;
+}
+
+.card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+   position: relative;
+   font-family: IBMPlexSans-Regular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 42px;
+   color: #000000;
+}
+
+label {
+   font-family: IBMPlexSans-Regular;
+}
+
+.botao {
+   position: relative;
+   width: 300px;
+   height: 50px;
+   background: #fed647;
+   border: 1px solid #828282;
+   box-sizing: border-box;
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+   font-family: IBMPlexSans-Regular;
+   font-size: 22px;
+}
+
+.botao:hover {
+   box-shadow: 1px 1px #a8b0b6, 2px 2px #a8b0b6, 3px 3px #a8b0b6;
+   -webkit-transform: translateX(-3px);
+   transform: translateX(-3px);
+}
+
+/* LOGIN */
+.container {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   background-color: #fafafa;
+}
+
+.login {
+   width: 400px;
+   height: 435px;
+   align-items: center;
+   border: 1px solid #f2f2f2;
+   box-sizing: border-box;
+   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+   transition: 0.3s;
+}
+
+.inputlogin {
+   width: 300px;
+   background: transparent;
+   border: 0;
+   border-bottom: 1px solid;
+   padding: 0.8em 0 0em;
+   text-align: left;
+   font-size: 20px;
+   font-family: IBMPlexSans-Regular;
+   font-weight: 300;
+   color: inherit;
+   outline: none;
+   align-items: center;
+}
+
+/* CADASTRO */
+.cadastro {
+   width: 550px;
+   height: 450px;
+   background: #ffffff;
+   border: 1px solid #f2f2f2;
+   box-sizing: border-box;
+   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.input_cadastro {
+   background: transparent;
+   border: 0;
+   border-bottom: 1px solid;
+   padding: 5px;
+   text-align: left;
+   font-size: 16px;
+   font-family: IBMPlexSans-Regular;
+   font-weight: 300;
+   color: inherit;
+   outline: none;
+   width: 100%;
+}
+
+.titulo_cadastro {
+   position: relative;
+   font-family: IBMPlexSans-Regular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 42px;
+   color: #000000;
+   margin-top: 2%;
+   margin-bottom: 0mm;
+}
+
+.form_cadastro {
+   margin: 50px;
+   margin-top: 0mm;
+}
+
+.icone {
+   margin-top: 5px;
+   background-color: #ffffff;
+   border: none;
+}
+
+.fa {
+   align-items: center;
+   color: #fed647;
+}
+
+.botao_cadastro {
+   position: relative;
+   width: 180px;
+   height: 40px;
+   background: #fed647;
+   border: 1px solid #828282;
+   box-sizing: border-box;
+   font-family: IBMPlexSans-Regular;
+   font-size: 22px;
+   margin: 16px;
+}
+
+.botao_cadastro:hover {
+   box-shadow: 1px 1px #a8b0b6, 2px 2px #a8b0b6, 3px 3px #a8b0b6;
+   -webkit-transform: translateX(-3px);
+   transform: translateX(-3px);
+}
+
+/* INICIO */
+.ulinicio {
+   list-style-type: none;
+   margin-top: 30px;
+   padding: 0;
+   overflow: hidden;
+   background-color: white;
+   border: 1px solid #4f4f4f;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.linicio {
+   float: right;
+}
+
+.linicio a {
+   display: block;
+   color: black;
+   text-align: center;
+   padding: 16px 30px;
+   text-decoration: none;
+   font-family: IBMPlexSans-Regular;
+}
+
+.linicio a:hover:not(.active) {
+   color: #fed647;
+}
+
+.active_nav a {
+   text-decoration: underline #fed647 5px;
+}
+
+.explorar {
+   top: 50%;
+   right: 50%;
+   transform: translate(50%, 50%);
+   position: absolute;
+}
+
+.inputinicio {
+   width: 500px;
+   height: 40px;
+   background: #ffffff;
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+   border: 1px solid #828282;
+}
+
+textarea:focus,
+input:focus {
+   box-shadow: 0 0 0 0;
+   outline: 0;
+}
+
+.botaoinicio {
+   width: 150px;
+   height: 40px;
+   background: #fed647;
+   border: 1px solid #828282;
+   box-sizing: border-box;
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+   font-family: IBMPlexSans-Regular;
+   font-size: 18px;
+}
+
+/* EXPLORAR */
+.formexplorar {
+   margin: 30px;
+}
+
+.inputexplorar {
+   background: transparent;
+   border: 0;
+   border-bottom: 1px solid;
+   padding: 0.3em 0 0em;
+   text-align: left;
+   font-size: 16px;
+   font-family: IBMPlexSans-Regular;
+   color: inherit;
+   outline: none;
+   width: 100%;
+}
+
+h4 {
+   margin: 30px;
+   margin-bottom: 10px;
+   font-family: IBMPlexSans-Regular;
+   font-style: normal;
+   font-weight: normal;
+   line-height: 36px;
+   text-transform: uppercase;
+}
+
+.botao_filtrar {
+   align-items: center;
+   width: 150px;
+   height: 40px;
+   background: white;
+   border: 1px solid #828282;
+   box-sizing: border-box;
+   font-family: IBMPlexSans-Regular;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: normal;
+   line-height: 36px;
+   text-transform: lowercase;
+}
+
+.botao_filtrar:hover {
+   box-shadow: 1px 1px #a8b0b6, 2px 2px #a8b0b6, 3px 3px #a8b0b6;
+   -webkit-transform: translateX(-3px);
+   transform: translateX(-3px);
+}
+
+.card_explorar {
+   background: #ffffff;
+   border: 1px solid #f2f2f2;
+   box-sizing: border-box;
+   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
+   display: flex;
+   flex: 1 1 auto;
+}
+
+.img_card {
+   width: 150px;
+   height: 150px;
+   margin: 5%;
+}
+
+.card_titulo {
+   font-family: IBMPlexSans-Regular;
+   font-size: 22px;
+   text-decoration: underline black;
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 5%;
+}
+
+.card_text {
+   font-family: IBMPlexSans-Regular;
+   font-size: 16px;
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 1%;
+}
+
+.botao_combinar {
+   width: 100px;
+   height: 30px;
+   background: #fed647;
+   border: 1px solid #828282;
+   box-sizing: border-box;
+   font-family: IBMPlexSans-Regular;
+   font-size: 16px;
+}
+
+.botao_combinar:hover {
+   box-shadow: 1px 1px #a8b0b6, 2px 2px #a8b0b6, 3px 3px #a8b0b6;
+   -webkit-transform: translateX(-3px);
+   transform: translateX(-3px);
+}
+
+.scroll {
+   height: 550px;
+   overflow-y: scroll;
+}
+
+/* MEUS DADOS */
+
+.ul_usuario {
+   list-style-type: none;
+   margin-top: 30px;
+   padding: 0;
+   overflow: hidden;
+   background-color: white;
+   border: 1px solid #4f4f4f;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.li_usuario {
+   float: left;
+}
+
+.li_usuario a {
+   display: block;
+   color: black;
+   padding: 12px 30px;
+   text-decoration: none;
+   font-family: IBMPlexSans-Regular;
+   font-size: 16px;
+}
+
+.active_usuario {
+   background-color: rgba(254, 214, 71, 0.7);
+   padding: 30px;
+}
+
+.meusdados {
+   width: 500px;
+   height: 400px;
+   background: #ffffff;
+   border: 1px solid #f2f2f2;
+   box-sizing: border-box;
+   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+   align-items: center;
+   margin-top: 30px;
+}
+
+/* INCLUIRLIVROS */
+
+.incluir_livro {
+   width: 600px;
+   height: 400px;
+   background: #ffffff;
+   border: 1px solid #f2f2f2;
+   box-sizing: border-box;
+   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+   align-items: center;
+   margin-top: 30px;
+}
+
+.input_incluir {
+   background: transparent;
+   border: 0;
+   border-bottom: 1px solid;
+   /* padding: 0.3em 0 0em; */
+   padding: 5px;
+   text-align: left;
+   font-size: 16px;
+   font-family: IBMPlexSans-Regular;
+   color: inherit;
+   outline: none;
+   width: 100%;
+   margin: 5px;
+}
+
+.input_incluir::-webkit-input-placeholder {
+   color: #6f6f6f;
+   font-style: italic;
+   font-size: 0.95rem;
+}
+
+.form_incluir {
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 20px;
+}
+
+.botao_incluir {
+   position: relative;
+   width: 150px;
+   height: 40px;
+   background: #fed647;
+   border: 1px solid #828282;
+   box-sizing: border-box;
+   font-family: IBMPlexSans-Regular;
+   font-size: 22px;
+   margin-top: 24px;
+   align-items: center;
+}
+
+.botao_incluir:hover {
+   box-shadow: 1px 1px #a8b0b6, 2px 2px #a8b0b6, 3px 3px #a8b0b6;
+   -webkit-transform: translateX(-3px);
+   transform: translateX(-3px);
+}
+
+/* MEUS LIVROS */
+
+.card_meus_livros {
+   background: #ffffff;
+   border: 1px solid #f2f2f2;
+   box-sizing: border-box;
+   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
+   display: flex;
+   flex: 1 1 auto;
+   width: 600px;
+   height: 180px;
+}
+
+.centralizar {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.dados_livros {
+   margin: 0%;
+   font-size: 14px;
+}
+
+.botao_excluir {
+   width: 100px;
+   height: 30px;
+   background: #fed647;
+   border: 1px solid #828282;
+   box-sizing: border-box;
+   font-family: IBMPlexSans-Regular;
+   font-size: 16px;
+   align-items: center;
+}
+
+.botao_excluir:hover {
+   box-shadow: 1px 1px #a8b0b6, 2px 2px #a8b0b6, 3px 3px #a8b0b6;
+   -webkit-transform: translateX(-3px);
+   transform: translateX(-3px);
+}
+#idioma {
+   text-transform: uppercase;
+}
