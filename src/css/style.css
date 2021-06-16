@@ -1,16 +1,16 @@
 @font-face {
    font-family: IBMPlexSans-Regular;
-   src: url(IBMPlexSans/IBMPlexSans-Regular.ttf);
+   src: url(../font/IBMPlexSans/IBMPlexSans-Regular.ttf);
 }
 
 @font-face {
    font-family: IBMPlexSans-Medium;
-   src: url(IBMPlexSans/IBMPlexSans-Medium.ttf);
+   src: url(../font/IBMPlexSans/IBMPlexSans-Medium.ttf);
 }
 
 @font-face {
    font-family: IBMPlexSans-SemiBold;
-   src: url(IBMPlexSans/IBMPlexSans-SemiBold.ttf);
+   src: url(../font/IBMPlexSans/IBMPlexSans-SemiBold.ttf);
 }
 
 html,
@@ -382,13 +382,14 @@ h4 {
 
 .incluir_livro {
    width: 600px;
-   height: 400px;
    background: #ffffff;
    border: 1px solid #f2f2f2;
    box-sizing: border-box;
    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
    align-items: center;
    margin-top: 30px;
+
+   padding-bottom: 40px;
 }
 
 .input_incluir {
@@ -448,6 +449,8 @@ h4 {
    flex: 1 1 auto;
    width: 600px;
    height: 180px;
+
+   gap: 40px;
 }
 
 .centralizar {
